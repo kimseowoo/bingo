@@ -3,8 +3,8 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(void) {
-	int N;
+int initate_bingo(void) {
+
 	int i,j;
 	int s[3][3]={
 	
@@ -13,18 +13,25 @@ int main(void) {
 		{7, 8, 9}};		//2차원 배열 초기화 
 
 
-	 N=5;
+	return 0;
+}
+
+int main(void){
+	
+	int N;
+	int s[N][N];
+	int i,j;
+	
+	N=7;
 	 		
 	for (i=0; i<N; i++)
 	{
 		for(j=0; j<N; j++)
-			printf("%d ",s[i][j]);
+			printf("%d ",s[i][j]=rand()%N*N);
 		printf("\n");
 	}
 	
 	
-	
-	return 0;
-}
+	}
 	
 
