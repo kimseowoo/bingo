@@ -23,11 +23,13 @@ int main(void){
 	int i,j;
 	
 	N=7;
+	
+	int max=N*N;
 	 		
 	for (i=0; i<N; i++)
 	{
 		for(j=0; j<N; j++)
-			printf("%d ",s[i][j]=rand()%N*N);
+			printf("%d ",s[i][j]=rand()%max);
 		printf("\n");
 	}
 	
