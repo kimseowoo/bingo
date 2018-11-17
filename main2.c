@@ -14,9 +14,14 @@ int main(void){
 	for(i=0; i<N; i++)
 	{
 		for(j=0; j<N; j++)
-		printf("%d \n",s[i][j]=1+rand()%max);
+	
+		printf("%d ",s[i][j]=1+rand()%max);
+		printf("\n");
+		
 		
 	}
+	
+	return 0;
 	
 }
 
