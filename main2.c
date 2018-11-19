@@ -18,7 +18,11 @@ int main()
 	printf("\n");
 	
 	printf("<UserBingo>\n");
-	initate_bingo2(UserBingo);	
+	initate_bingo2(UserBingo);
+	printf("\n");
+	
+	
+	get_number_byMe();
 }
 
 void initate_bingo(int s[N][N])	
@@ -107,9 +111,28 @@ void initate_bingo2(int s[N][N])
 }
 	
 	
+void get_number_byMe()
+{
+	int s[N][N];
+	int i,j;
+	int max=N*N;
+	int input=i;
+		
+	printf("input a number : ");
+	scanf("%d",&i);
+	
+	for(i=0; i<N; i++) 
+	{
+		for(j=0; j<0; j++)
+		{
+			if (s[i][j] == input) 
+			{
+				s[i][j] = -1;
+			}
+		}
+	}	
+}
 
-	
-	
 	
 	
 	
