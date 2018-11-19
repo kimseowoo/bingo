@@ -23,6 +23,7 @@ int main()
 	
 	
 	get_number_byMe();
+	print_bingo();
 }
 
 void initate_bingo(int s[N][N])	
@@ -120,19 +121,34 @@ void get_number_byMe()
 		
 	printf("input a number : ");
 	scanf("%d",&i);
+}
+void process_bingo()
+{
+	int s[N][N];
+	int i,j;
+	int max=N*N;
+	int input;
 	
-	for(i=0; i<N; i++) 
-	{
-		for(j=0; j<0; j++)
+	get_number_byMe();
+	
+		for(i=0; i<N; i++) 
 		{
-			if (s[i][j] == input) 
+			for(j=0; j<0; j++)
 			{
-				s[i][j] = -1;
+				if (s[i][j] == input) 
+				{
+					s[i][j] = -1;
+				}
 			}
-		}
-	}	
+		}	
+	
 }
 
+void print_bingo()
+{
+	process_bingo();
+
+}
 	
 	
 	
