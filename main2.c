@@ -35,14 +35,12 @@ void initate_bingo(int s[N][N])
 	
 	for(i=0; i<100; i++)
 	{
-		for(j=0; j<100; j++)
+		x=rand()%N;
+		y=rand()%N;
+		n=rand()%N;
+		m=rand()%N;
 		
-		s[x][y]=1+rand()%max;
-		s[n][m]=1+rand()%max;
-		temp = s[x][y];
-		s[x][y]=s[n][m];
-		s[n][m]=temp;
-	
+		
 	}
 
 
