@@ -22,7 +22,7 @@ void initate_bingo(int s[N][N])
 	int max=N*N;
 	int count=1;
 	int x,y,n,m;				//맞교환할 배열 변수 
-	int temp; 				//맞교환할 수를 임시 보관 
+	int temp; 			    	//맞교환할 수를 임시 보관 
 	
 	
 	for(i=0; i<N; i++)
@@ -40,7 +40,9 @@ void initate_bingo(int s[N][N])
 		n=rand()%N;
 		m=rand()%N;
 		
-		
+		temp=s[x][y];
+		s[x][y]=s[n][m];
+		s[n][m]=temp;
 	}
 
 
@@ -53,6 +55,8 @@ void initate_bingo(int s[N][N])
 			printf("\n");
 	}									//빙고판 출력 
 }
+
+
 
 
 	
