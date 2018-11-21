@@ -6,16 +6,14 @@
 #include "get_number_byMe.h"
 #include "process_bingo.h"
 #include "get_number_byCom.h"
+#include "count_bingo.h"
 
 #define N 3
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(int(*s)[N])
-{
-	int (*s)[N];	
-	int input;
-	
+int main(int int (*s)[N])
+{	
 	int ComBingo[N][N];
 	int UserBingo[N][N];
 	
@@ -31,7 +29,6 @@ int main(int(*s)[N])
 	get_number_byMe();
 	printf("input : %d",input);
 	
-	process_bingo();
 }
 
 
