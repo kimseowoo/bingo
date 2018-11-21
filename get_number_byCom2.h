@@ -4,6 +4,8 @@
 
 
 #define N 7
+#define M 3
+
 
 int get_number_byCom(int (*s)[N])
 {

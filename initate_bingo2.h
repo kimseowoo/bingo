@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 #define N 7
+#define M 3
+
 
 void initate_bingo2(int (*s)[N])	
 {

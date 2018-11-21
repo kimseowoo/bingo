@@ -3,31 +3,34 @@
 #include <time.h>
 
 #define N 7
+#define M 3
+
 
 int count_bingo(int (*s)[N])
 {
-	int User[N][N];
-	int Com[N][N];
+	
 	int i,j;
 	int bingo=0;
 	int x,y,z,w=0;						//x=가로, y=세로, z=\대각선, w= /대각선 
 	
+	
+	 
 	for(i=0; i<N; i++)
 		{ 	x=0;
 		 	for(j=0; j<N; j++)
 			{
-				if(User[i][j]==-1)
+				if(s[i][j]==-1)
 				x++;					//가로빙고 수 체크 
 				
 				if(i=j)
 				{
-					if(User[i][j]==-1)
+					if(s[i][j]==-1)
 					z++;				// \대각선 수 체 
 				}
 				
 				if((i+j)==N)
 				{
-					if(User[i][j]==-1)
+					if(s[i][j]==-1)
 					w++;				//  /대각선 수 체크 
 				}
 			}	
@@ -41,7 +44,7 @@ int count_bingo(int (*s)[N])
 		{ 	y=0;
 		 	for(i=0; i<N; i++)
 			{
-				if(User[i][j]==-1)
+				if(s[i][j]==-1)
 				y++;					//세로빙고 수 체크 
 				
 				if(y==N)
