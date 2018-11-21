@@ -3,7 +3,7 @@
 #include <time.h>
 #define N 3
 
-int process_bingo(int s[N][N], int input)
+int process_bingo(int(*s)[N], int input)
 {
 	int i,j;
 	int max=N*N;
@@ -12,9 +12,9 @@ int process_bingo(int s[N][N], int input)
 	{
 		for(j=0; j<max; j++)
 		{
-			if(input==s[N][N])
+			if(input==s[i][j])
 			{
-				s[i][j]=-1;
+				
 				
 				return 0;
 			}

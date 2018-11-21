@@ -10,7 +10,7 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main()
+int main(int(*s)[N])
 {
 	int s[N][N];	
 	int input;
@@ -30,7 +30,7 @@ int main()
 	get_number_byMe();
 	printf("input : %d",input);
 	
-	process_bingo(s[N][N], input);
+	process_bingo();
 }
 
 

@@ -5,10 +5,9 @@
 
 #define N 3
 
-int get_number_byMe()
+int get_number_byMe(int (*s)[N])
 {
 	int i,j;
-	int s[N][N];
 	int max=N*N;
 	int input;
 		
@@ -21,13 +20,20 @@ int get_number_byMe()
 		if(input<1||input>N*N)
 		{
 			printf("retry : ");
-		
 			continue;	
 		}
-		else
+		for(i=0; i<N; i++)
 		{
-			process_bingo();
-		}					
+			for(j=0; j<N; j++)
+			{
+				if(s[i][j] == input);
+			
+				return input;
+			else(Áßº¹)
+			}	
+		}							
+		
+	if						
 	}
 		return input;
 }

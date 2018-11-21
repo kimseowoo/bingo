@@ -3,7 +3,7 @@
 #include <time.h>
 #define N 3
 
-void initate_bingo(int s[N][N])	
+void initate_bingo(int (*s)[N])	
 {
 	srand((unsigned int)time(NULL));
 
