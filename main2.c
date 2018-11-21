@@ -4,6 +4,7 @@
 #include "initate_bingo.h"
 #include "initate_bingo2.h"
 #include "get_number_byMe.h"
+#include "process_bingo.h"
 
 #define N 3
 
@@ -31,25 +32,5 @@ int main()
 }
 
 
-
-int process_bingo(int input)
-{
-	int i,j;
-	int s[N][N];
-	int max=N*N;
-	
-	for(i=0; i<max; i++)
-	{
-		for(j=0; j<max; j++)
-			if(s[i][j]==input)
-			{
-				s[i][j]=-1;
-			}
-	}
-		return input;
-}
-	
-	
-	
 
 

@@ -18,12 +18,15 @@ int get_number_byMe()
 		scanf("%d",&input);
 
 		if(input<1||input>N*N)
-		
+		{
 			printf("retry : ");
 		
-		continue;	
-			
-		return input;
+			continue;	
+		}
+		else
+			process_bingo(input);
+					
 	}
+		return input;
 }
 
