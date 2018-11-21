@@ -5,6 +5,7 @@
 #include "initate_bingo2.h"
 #include "get_number_byMe.h"
 #include "process_bingo.h"
+#include "get_number_byCom.h"
 
 #define N 3
 
@@ -12,7 +13,7 @@
 
 int main(int(*s)[N])
 {
-	int s[N][N];	
+	int (*s)[N];	
 	int input;
 	
 	int ComBingo[N][N];

@@ -3,7 +3,7 @@
 #include <time.h>
 #define N 3
 
-int process_bingo(int(*s)[N], int input)
+int process_bingo(int(*s)[N], int input)			//입력값을 -1로 바꿈 
 {
 	int i,j;
 	int max=N*N;
@@ -13,11 +13,13 @@ int process_bingo(int(*s)[N], int input)
 		for(j=0; j<max; j++)
 		{
 			if(input==s[i][j])
-			{
+				printf("%d",-1);
+			
+			else
+				printf("%d",s[i][j]);
+			
 				
-				
-				return 0;
-			}
+			
 		
 		}
 	}

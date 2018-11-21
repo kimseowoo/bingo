@@ -5,12 +5,12 @@
 
 #define N 3
 
-int get_number_byMe(int (*s)[N])
+int get_number_byCom(int (*s)[N])
 {
 	int i,j;
 	int max=N*N;
 	int input;
-	int Check=0; 
+	int Check=0;
 		
 	printf("input a number : ");
 	
@@ -41,8 +41,5 @@ int get_number_byMe(int (*s)[N])
 		}
 	}	
 		return input;
-}							
-		
-
 	
-
+}
