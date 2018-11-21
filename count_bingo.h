@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define N 3
+#define N 7
 
 int count_bingo(int (*s)[N])
 {
@@ -10,7 +10,7 @@ int count_bingo(int (*s)[N])
 	int Com[N][N];
 	int i,j;
 	int bingo=0;
-	int x, y,z,w=0;
+	int x,y,z,w=0;
 	
 	for(i=0; i<N; i++)
 		{ 	x=0;

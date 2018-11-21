@@ -1,25 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "get_number_byMe.h"
+#include "get_number_byCom.h"
 
-#define N 3
+#define N 7
 
-int process_bingo(int (*s)[N], int input)
+void process_bingo(int (*s)[N],int input)
 {
 	int i,j;
-	int max=N*N;
 	
-	for(i=0; i<max; i++)
+	for(i=0; i<N; i++)
 	{
-		for(j=0; j<max; j++)
+		for(j=0; j<N; j++)
 		{
-			if(input==s[i][j]);
+			if(s[i][j]==input)
 			s[i][j]=-1;
-			return 0;
-		}
-	}
-	return 0;
-	
+		
+		}	
+	}						
+		
 }
 	
 

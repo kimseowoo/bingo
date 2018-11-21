@@ -7,13 +7,14 @@
 #define N 3
 #define M 2
 
-int print_bingo(int (*s)[N], int count)
+int print_bingo(int (*s)[N])
 {
-	initate_bingo(Com);
-	initate_bingo2(User);
-
 	int i,j;
 	
 	for (i=0; j<N; j++)
-		if(s
+		if(s[i][j]!=1)
+		{
+			printf("%&d",s[i][j]);
+		}
+			printf("\n\n");
 }

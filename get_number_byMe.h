@@ -3,7 +3,7 @@
 #include <time.h>
 #include "process_bingo.h"
 
-#define N 3
+#define N 7
 
 int get_number_byMe(int (*s)[N])
 {
