@@ -30,6 +30,7 @@ void get_number_byMe()
 					if(s[i][j]==input)
 					{
 						s[i][j]=-1;
+						break;
 					}
 					else
 						printf("이미 입력된 숫자");
