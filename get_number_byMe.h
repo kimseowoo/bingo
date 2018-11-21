@@ -4,7 +4,7 @@
 
 #define N 3
 
-void get_number_byMe()
+int get_number_byMe()
 {
 	int i,j;
 	int s[N][N];
@@ -20,25 +20,10 @@ void get_number_byMe()
 		if(input<1||input>N*N)
 		
 			printf("retry : ");
+		
+		continue;	
 			
-			
-		else
-		{
-			for(i=0; i<max; i++)
-			{
-				for(j=0; j<max; j++)
-					if(s[i][j]==input)
-					{
-						s[i][j]=-1;
-						break;
-					}
-					else
-						printf("이미 입력된 숫자");
-			}
-		}
-			
-	
+		return input;
 	}
 }
-
 
