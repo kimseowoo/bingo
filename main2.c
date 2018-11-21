@@ -11,24 +11,28 @@
 #define N 3
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
+int s[N][N];
 
-int main(int int (*s)[N])
+int main(int (*s)[N])
 {	
-	int ComBingo[N][N];
-	int UserBingo[N][N];
 	
-	printf("<ComBingo>\n");
-	initate_bingo(ComBingo);
+	
+	int Com[N][N];
+	int User[N][N];
+	
+	int input;
+	
+	printf("<Com>\n");
+	initate_bingo(Com);
 	printf("\n");
 	
-	printf("<UserBingo>\n");
-	initate_bingo2(UserBingo);
+	printf("<User>\n");
+	initate_bingo2(User);
 	printf("\n");
 	
 	
 	get_number_byMe();
-	printf("input : %d",input);
-	
+		
 }
 
 

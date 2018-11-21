@@ -22,13 +22,13 @@ int count_bingo(int (*s)[N])
 				if(i=j)
 				{
 					if(User[i][j]==-1)
-					z++;				// 
+					z++;				// \대각선 수 체 
 				}
 				
 				if((i+j)==4)
 				{
 					if(User[i][j]==-1)
-					w++;				// 
+					w++;				//  /대각선 수 체크 
 				}
 			}	
 			if(x==5)
@@ -42,7 +42,7 @@ int count_bingo(int (*s)[N])
 		 	for(i=0; i<N; i++)
 			{
 				if(User[i][j]==-1)
-				y++;					//가로빙고 수 체크 
+				y++;					//세로빙고 수 체크 
 				
 				if(y==5)
 				{

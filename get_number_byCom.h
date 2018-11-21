@@ -12,7 +12,9 @@ int get_number_byCom(int (*s)[N])
 	int input;
 	int Check=0;
 		
-	printf("input a number : ");
+	printf("input a number : %d",1+rand()%max);
+	
+	input=1+rand()%max;
 	
 	while(1)
 	{	
