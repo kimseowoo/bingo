@@ -2,24 +2,35 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define N 7
+#define N 3
 
 void get_number_byMe()
 {
+	int i,j;
 	int s[N][N];
 	int max=N*N;
 	int input;
 		
 	printf("input a number : ");
-	scanf("%d",&input);
 	
-	while(input<1||input>N*N)
-	{
-		printf("retry : ");
+	while(1)
+	{	
 		scanf("%d",&input);
-	}	
+
+		if(input<1||input>N*N)
+		{
+			printf("retry : ");
+			continue;
+		}	
+		for(i=0; i<max; i++)
+		{
+			for(j=0; j<max; j++)
+		
+			s[i][j]=input;
+		}
+	}
 	
-	input=-1;
+	
 }
 
 
