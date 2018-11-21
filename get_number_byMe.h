@@ -18,19 +18,26 @@ void get_number_byMe()
 		scanf("%d",&input);
 
 		if(input<1||input>N*N)
-		{
-			printf("retry : ");
-			continue;
-		}	
-		for(i=0; i<max; i++)
-		{
-			for(j=0; j<max; j++)
 		
-			s[i][j]=input;
+			printf("retry : ");
+			
+			
+		else
+		{
+			for(i=0; i<max; i++)
+			{
+				for(j=0; j<max; j++)
+					if(s[i][j]==input)
+					{
+						s[i][j]=-1;
+					}
+					else
+						printf("이미 입력된 숫자");
+			}
 		}
+			
+	
 	}
-	
-	
 }
 
 

@@ -27,25 +27,7 @@ int main()
 	
 	
 	get_number_byMe();
- 	process_bingo();
 	
-}
-
-void process_bingo()
-{
-	int i,j;
-	int max=N*N;
-	int s[i][j];
-	int input;
-	  
-	for(i=0; i<max; i++)
-	{
-		for(j=0; j<max; j++)
-		{
-			if(s[i][j]==input)
-			printf("-1",s[i][j]);
-		}
-	}
 }
 
 
