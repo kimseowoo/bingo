@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "initate_bingo.h"
-#include "initate_bingo2.h"
 
 #define N 3
 #define M 2

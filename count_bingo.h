@@ -10,7 +10,7 @@ int count_bingo(int (*s)[N])
 	int Com[N][N];
 	int i,j;
 	int bingo=0;
-	int x,y,z,w=0;
+	int x,y,z,w=0;						//x=가로, y=세로, z=\대각선, w= /대각선 
 	
 	for(i=0; i<N; i++)
 		{ 	x=0;
@@ -25,13 +25,13 @@ int count_bingo(int (*s)[N])
 					z++;				// \대각선 수 체 
 				}
 				
-				if((i+j)==4)
+				if((i+j)==N)
 				{
 					if(User[i][j]==-1)
 					w++;				//  /대각선 수 체크 
 				}
 			}	
-			if(x==5)
+			if(x==N)					//가로에 -1이 N개이면 1빙고 
 			{
 				bingo++;
 			}
@@ -44,9 +44,9 @@ int count_bingo(int (*s)[N])
 				if(User[i][j]==-1)
 				y++;					//세로빙고 수 체크 
 				
-				if(y==5)
+				if(y==N)
 				{
-					bingo++;		// 
+					bingo++;		// 세로에 -1이 N개이면 1빙고
 				}
 			}
 		}
