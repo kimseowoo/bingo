@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "process_bingo.h"
 
 #define N 3
 
@@ -24,8 +25,9 @@ int get_number_byMe()
 			continue;	
 		}
 		else
-			process_bingo(input);
-					
+		{
+			process_bingo();
+		}					
 	}
 		return input;
 }

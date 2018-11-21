@@ -28,7 +28,9 @@ int main()
 	
 	
 	get_number_byMe();
-	process_bingo(input);
+	printf("input : %d",input);
+	
+	process_bingo(s[N][N], input);
 }
 
 
